@@ -1,6 +1,18 @@
 // import { Secp256k1KeyIdentity } from '@dfinity/identity';
 // import fetch from 'isomorphic-fetch';
-import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
+// import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
+
+// @ts-ignore
+import { idlFactory } from '../../declarations/NFTBarter/NFTBarter.did.js';
+
+import { _SERVICE as INFTBarter } from '../../declarations/NFTBarter/NFTBarter.did.js';
+import { curriedCreateActor } from '../../NFTBarter_assets/src/utils/createActor';
+import localCanisterIds from '../../../.dfx/local/canister_ids.json';
+
+const canisterId = localCanisterIds.NFTBarter.local;
+
+const createNFTBarterActor =
+  curriedCreateActor<INFTBarter>(idlFactory)(canisterId);
 
 // const identityOptionOfAlice = {
 //   agentOptions: {
