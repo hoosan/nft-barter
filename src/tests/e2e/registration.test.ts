@@ -1,4 +1,3 @@
-import { jest } from '@jest/globals';
 import { Secp256k1KeyIdentity } from '@dfinity/identity';
 import fetch from 'isomorphic-fetch';
 import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
@@ -11,8 +10,6 @@ const identityOptionOfAlice = {
   },
 };
 const actorOfAlice = createNFTBarterActor(identityOptionOfAlice);
-
-jest.setTimeout(60000);
 
 describe('User registration tests', () => {
   it('Alice is not registered yet.', async () => {
