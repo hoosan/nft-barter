@@ -1,6 +1,6 @@
 // import { Secp256k1KeyIdentity } from '@dfinity/identity';
 // import fetch from 'isomorphic-fetch';
-// import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
+import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
 
 // const identityOptionOfAlice = {
 //   agentOptions: {
