@@ -2,13 +2,13 @@ import { Secp256k1KeyIdentity } from '@dfinity/identity';
 import fetch from 'isomorphic-fetch';
 import { createNFTBarterActor } from '../../NFTBarter_assets/src/utils/createNftBarterActor';
 
-const identityOptionOfAlice = {
-  agentOptions: {
-    identity: Secp256k1KeyIdentity.generate(),
-    fetch,
-    host: 'http://localhost:8000',
-  },
-};
+// const identityOptionOfAlice = {
+//   agentOptions: {
+//     identity: Secp256k1KeyIdentity.generate(),
+//     fetch,
+//     host: 'http://localhost:8000',
+//   },
+// };
 // const actorOfAlice = createNFTBarterActor(identityOptionOfAlice);
 
 // describe('User registration tests', () => {
