@@ -9,7 +9,7 @@ const identityOptionOfAlice = {
     host: 'http://localhost:8000',
   },
 };
-const actorOfAlice = createNFTBarterActor(identityOptionOfAlice);
+// const actorOfAlice = createNFTBarterActor(identityOptionOfAlice);
 
 // describe('User registration tests', () => {
 //   it('Alice is not registered yet.', async () => {
